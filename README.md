@@ -38,8 +38,10 @@ New in version 3.7: The built-in breakpoint(), when called with defaults, can be
 
 The typical usage to inspect a crashed program is:
 
+
 >>>
 >>> import pdb
+>>> 
 >>> import mymodule
 >>> mymodule.test()
 Traceback (most recent call last):
