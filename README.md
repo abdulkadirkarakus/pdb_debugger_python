@@ -7,23 +7,22 @@ The debugger is extensible – it is actually defined as the class Pdb. This is 
 
 The debugger’s prompt is (Pdb). Typical usage to run a program under control of the debugger is:
 
->>>
 
->>> import pdb
+  >>> import pdb
 
->>> import mymodule
+  >>> import mymodule
 
->>> pdb.run('mymodule.test()')
+  >>> pdb.run('mymodule.test()')
 
-> <string>(0)?()
-(Pdb) continue
+  > <string>(0)?()
+  (Pdb) continue
 
-> <string>(1)?()
-(Pdb) continue
-NameError: 'spam'
+  > <string>(1)?()
+  (Pdb) continue
+  NameError: 'spam'
 
-> <string>(1)?()
-(Pdb)
+  > <string>(1)?()
+  (Pdb)
 
 Changed in version 3.3: Tab-completion via the readline module is available for commands and command arguments, e.g. the current global and local names are offered as arguments of the p command.
 
